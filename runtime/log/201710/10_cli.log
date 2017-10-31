@@ -1,0 +1,30 @@
+[ 2017-10-10T20:41:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000129s ]
+[ info ] [ LOG ] INIT File
+[ 2017-10-10T20:41:07+08:00 ][ info ] [ CACHE ] INIT File
+[ 2017-10-10T20:41:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001087s ]
+[ 2017-10-10T20:41:07+08:00 ][ info ] [ DB ] INIT mysql
+[ 2017-10-10T20:41:07+08:00 ][ info ] [ LANG ] /usr/share/nginx/haofangzhiye/application/admin/lang/zh-cn.php
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001394s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001400s ]
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'intentionlog' LIMIT 1 [ RunTime:0.000346s ]
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'intentionlog' , '意向日志' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1507639267 , 1507639267) [ RunTime:0.008462s ]
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (211 , 'intentionlog/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1507639267 , 1507639267) [ RunTime:0.000212s ]
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (211 , 'intentionlog/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1507639267 , 1507639267) [ RunTime:0.000118s ]
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (211 , 'intentionlog/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1507639267 , 1507639267) [ RunTime:0.000111s ]
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (211 , 'intentionlog/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1507639267 , 1507639267) [ RunTime:0.000119s ]
+[ 2017-10-10T20:41:07+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (211 , 'intentionlog/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1507639267 , 1507639267) [ RunTime:0.000155s ]
+[ 2017-10-10T20:41:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000127s ]
+[ info ] [ LOG ] INIT File
+[ 2017-10-10T20:41:37+08:00 ][ info ] [ CACHE ] INIT File
+[ 2017-10-10T20:41:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001098s ]
+[ 2017-10-10T20:41:37+08:00 ][ info ] [ DB ] INIT mysql
+[ 2017-10-10T20:41:37+08:00 ][ info ] [ LANG ] /usr/share/nginx/haofangzhiye/application/admin/lang/zh-cn.php
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001326s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001259s ]
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'orderlog' LIMIT 1 [ RunTime:0.000302s ]
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'orderlog' , '订单日志' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1507639297 , 1507639297) [ RunTime:0.003081s ]
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (217 , 'orderlog/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1507639297 , 1507639297) [ RunTime:0.000281s ]
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (217 , 'orderlog/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1507639297 , 1507639297) [ RunTime:0.000161s ]
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (217 , 'orderlog/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1507639297 , 1507639297) [ RunTime:0.000125s ]
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (217 , 'orderlog/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1507639297 , 1507639297) [ RunTime:0.000115s ]
+[ 2017-10-10T20:41:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (217 , 'orderlog/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1507639297 , 1507639297) [ RunTime:0.000123s ]

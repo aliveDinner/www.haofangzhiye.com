@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title> [ Home ] </title>
+
+</head>
+
+<body>
+
+<!-- This webContainerTop start 上 开始 -->
+<section id="webContainerTop" style="display: none;">
+
+    <!-- This absTopForms start -->
+    <article id="absTopTable">
+
+    </article>
+    <!-- This absTopForms end -->
+
+    <!-- This fullTopForms start -->
+    <article id="fullTopTable">
+
+    </article>
+    <!-- This fullTopForms end -->
+
+</section>
+<!-- This webContainerTop end 上 结束 -->
+
+<!-- This webContainerMiddle start 中 开始 -->
+<section id="webContainerMiddle" class="webContainerMiddle" style="margin-top: 20px">
+    <!-- This webBannerTable start -->
+    <article id="webContentBody" class="webContentBody">
+        <div class="detailHead textCenter">
+            <span class="detailTitle">{$row.title}</span>
+        </div>
+        <div class="authorDiv">
+            <span>{$row.author}</span><span class="timeSpan">{:date("Y-m-d H:i",$row.createtime)}</span>
+        </div>
+        <hr/>
+        <section>
+            {if condition="$row.titleimage neq ''"}
+            <div>
+                <img class="imgBigBox" src="{$row.titleimage}">
+            </div>
+            {/if}
+            <div class="detailContent">
+                {$row.content}
+            </div>
+        </section>
+
+    </article>
+    <!-- This webBannerTable end -->
+
+</section>
+<!-- This webContainerMiddle end 中 结束 -->
+
+<!-- This webContainerBottom start 下 开始 -->
+<section id="webContainerBottom" style="display: none;">
+
+    <!-- This fullBottomForms start -->
+    <article id="fullBottomTable">
+
+    </article>
+    <!-- This fullBottomForms end -->
+
+    <!-- This absBottomForms start -->
+    <article id="absBottomTable">
+
+    </article>
+    <!-- This absBottomForms end -->
+
+</section>
+<!-- This webContainerBottom end 下 结束 -->
+
+</body>
+</html>

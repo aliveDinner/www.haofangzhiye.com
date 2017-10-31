@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title> [ Home ] </title>
+    <link rel="stylesheet" href="/assets/fotorama/fotorama.css"/>
+    <script type="text/javascript" src="/assets/fotorama/fotorama.js"></script>
+<script type="text/javascript" >
+    $(document).on("click", ".btn-intention[data-id]", function () {
+        Frontend.api.open('../admin/intention/add_house/ids/' + $(this).data('id'), __('Add'));
+    });
+</script>
+</head>
+
+<body>
+
+<!-- This webContainerTop start 上 开始 -->
+<section id="webContainerTop" style="display: none;">
+
+    <!-- This absTopForms start -->
+    <article id="absTopTable">
+
+    </article>
+    <!-- This absTopForms end -->
+
+    <!-- This fullTopForms start -->
+    <article id="fullTopTable">
+
+    </article>
+    <!-- This fullTopForms end -->
+
+</section>
+<!-- This webContainerTop end 上 结束 -->
+
+<!-- This webContainerMiddle start 中 开始 -->
+<section id="webContainerMiddle" class="webContainerMiddle">
+    <!-- This webBannerTable start -->
+    <article id="webContentBody" class="webContentBody">
+        <div class="detailHead">
+            <span class="detailTitle">{:empty($row.BiaoTi)?$row.HouseName:$row.BiaoTi}</span>
+        </div>
+        <section>
+            <div class="detailScrollImages fotorama" data-nav="thumbs">
+                {volist name='$images' id='vo'}
+                <img class="img-responsive" src="{$vo}">
+                {/volist}
+            </div>
+            <div class="detailBaseInfo">
+                <div class="priceDiv">
+                    <span class="price_h1">{$row.FangJia}</span><span class="priceUnit">元</span>
+                </div>
+                <div class="houseBaseInfoDiv">
+                    <hr/>
+                    <div class="baseInfoBox floatLeft">
+                        <p class="infoBitFont">{$row.HuXing_Shi}室{$row.HuXing_Ting}厅{$row.HuXing_Wei}卫</p>
+                        <p>户型</p>
+                    </div>
+                    <div class="baseInfoBox floatLeft boraderLeft boraderRight">
+                        <p class="infoBitFont">{$row.JianZhuMianJi}平米</p>
+                        <p>建筑面积</p>
+                    </div>
+                    <div class="baseInfoBox floatRight">
+                        <p class="infoBitFont"></p>
+                        <p></p>
+                    </div>
+                    <hr/>
+                    <div class="baseInfoBox floatLeft">
+                        <p class="infoBitFont">{$row->getChaoxiangTextAttr($row.ChaoXiang,null)}</p>
+                        <p>朝向</p>
+                    </div>
+                    <div class="baseInfoBox floatLeft boraderLeft boraderRight">
+                        <p class="infoBitFont">第{$row.LouCeng}层</p>
+                        <p>楼层 (共{$row.CengGao}层)</p>
+                    </div>
+                    <div class="baseInfoBox floatRight">
+                        <p class="infoBitFont">{$row->getZhuangxiuleixingTextAttr($row.ZhuangXiuLeiXing,null)}</p>
+                        <p>装修</p>
+                    </div>
+                    <hr/>
+                </div>
+                <div class="trl-item2">
+                    <div class="lab">小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</div>
+                    <div class="rcont">{$row.HouseName}</div>
+                </div>
+                <div class="trl-item2" style="clear: both;padding-top: 15px;">
+                    <div class="lab">区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;域</div>
+                    <div class="rcont">{$row.Adress_city}</div>
+                </div>
+                <div class="trl-item2" style="margin-top: 50px;">
+                    <a href="#" class="btn btn-danger btn-intention"
+                       data-id="{$row.Id}"><i class="fa fa-pencil"></i> 预约看房</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="alive-layout">
+            <span class="sectionTitle">房源信息</span>
+            <hr/>
+            <div class="detailHouseSourceInfo">
+                <div class="text-item clearfix">
+                    <span class="lab">建筑年代</span>
+                    <span class="rcont">{$row.JianZhuNianDai}年</span>
+                </div>
+                <div class="text-item clearfix">
+                    <span class="lab">有无电梯</span>
+                    <span class="rcont">{$row.Elevator_switch==0?"无":"有"} </span>
+                </div>
+                <div class="text-item clearfix">
+                    <span class="lab">产权性质</span>
+                    <span class="rcont">{$row->getChanquanTextAttr($row.ChanQuan,null)}</span>
+                </div>
+                <div class="text-item clearfix">
+                    <span class="lab">住宅类别</span>
+                    <span class="rcont">{$row->getZhuzhaileixingTextAttr($row.ZhuZhaiLeiXing,null)}</span>
+                </div>
+                <div class="text-item clearfix" style="clear: both">
+                    <span class="lab">建筑结构</span>
+                    <span class="rcont">平层</span>
+                </div>
+                <div class="text-item clearfix">
+                    <span class="lab">建筑类别</span>
+                    <span class="rcont">板楼</span>
+                </div>
+                <div class="text-item clearfix">
+                    <span class="lab">挂牌时间</span>
+                    <span class="rcont">2017-08-17</span>
+                </div>
+            </div>
+        </section>
+        <section class="alive-layout">
+            <span class="sectionTitle">房源描述</span>
+            <hr/>
+            <div class="detailHouseSourceContent">
+                {$row.content}
+            </div>
+        </section>
+        <section class="alive-layout">
+            <span class="sectionTitle">房源图片</span>
+            <hr/>
+            <div class="detailHouseSourceImages">
+                {volist name='$images' id='vo'}
+                <img class="img-responsive img_margin" src="{$vo}">
+                {/volist}
+            </div>
+        </section>
+    </article>
+    <!-- This webBannerTable end -->
+
+</section>
+<!-- This webContainerMiddle end 中 结束 -->
+
+<!-- This webContainerBottom start 下 开始 -->
+<section id="webContainerBottom" style="display: none;">
+
+    <!-- This fullBottomForms start -->
+    <article id="fullBottomTable">
+
+    </article>
+    <!-- This fullBottomForms end -->
+
+    <!-- This absBottomForms start -->
+    <article id="absBottomTable">
+
+    </article>
+    <!-- This absBottomForms end -->
+
+</section>
+<!-- This webContainerBottom end 下 结束 -->
+
+</body>
+</html>

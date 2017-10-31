@@ -1,0 +1,1951 @@
+---------------------------------------------------------------
+[ 2017-10-13T22:51:45+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/index.html
+[ info ] www.haofangzhiye.com/index/news/index.html [运行时间：0.005981s][吞吐率：167.20req/s] [内存消耗：701.30kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000257s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000051s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->index[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/news/index.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'nav',
+  3 => 'slider',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_slider` [ RunTime:0.001269s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_slider` WHERE  `is_delete_switch` = 1  AND `is_passed` = '2'  AND `status` = '1'  AND `type` = '5' ORDER BY `weigh` ASC LIMIT 6 [ RunTime:0.000371s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:51:46+08:00 ] 172.18.138.217 36.1.107.151 GET /index/ajax/lang?callback=define&controllername=news&v=1507906305
+[ info ] www.haofangzhiye.com/index/ajax/lang?callback=define&controllername=news&v=1507906305 [运行时间：0.001939s][吞吐率：515.71req/s] [内存消耗：353.51kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000229s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'news',
+  'v' => '1507906305',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000046s ]
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/index/controller/Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:51:47+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/index?newsType=2&sort=id&order=desc&offset=0&limit=12&_=1507906306801
+[ info ] www.haofangzhiye.com/index/news/index?newsType=2&sort=id&order=desc&offset=0&limit=12&_=1507906306801 [运行时间：0.004875s][吞吐率：205.13req/s] [内存消耗：696.98kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000254s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'newsType' => '2',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '12',
+  '_' => '1507906306801',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000048s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->index[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_news` WHERE  `newstype` = '2' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `newstype` = '2' ORDER BY `id`  desc LIMIT 0,12 [ RunTime:0.000256s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:51:47+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/index?newsType=1&sort=id&order=desc&offset=0&limit=12&_=1507906306802
+[ info ] www.haofangzhiye.com/index/news/index?newsType=1&sort=id&order=desc&offset=0&limit=12&_=1507906306802 [运行时间：0.004443s][吞吐率：225.08req/s] [内存消耗：696.98kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000188s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'newsType' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '12',
+  '_' => '1507906306802',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000045s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->index[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000355s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_news` WHERE  `newstype` = '1' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `newstype` = '1' ORDER BY `id`  desc LIMIT 0,12 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:51:47+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/getQuestion?sort=id&order=desc&offset=0&limit=12&_=1507906306803
+[ info ] www.haofangzhiye.com/index/news/getQuestion?sort=id&order=desc&offset=0&limit=12&_=1507906306803 [运行时间：0.004137s][吞吐率：241.72req/s] [内存消耗：692.00kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000184s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'getQuestion',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '12',
+  '_' => '1507906306803',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000043s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->getQuestion[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_question` [ RunTime:0.001136s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_question` ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_question` ORDER BY `id`  desc LIMIT 0,12 [ RunTime:0.000168s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:52:49+08:00 ] 172.18.138.217 36.1.107.151 GET /index/index/index.html
+[ info ] www.haofangzhiye.com/index/index/index.html [运行时间：0.009290s][吞吐率：107.64req/s] [内存消耗：797.76kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000250s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000064s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/index/index.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'HotHouse',
+  3 => 'questions',
+  4 => 'slider',
+  5 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_slider` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_slider` WHERE  `is_delete_switch` = 1  AND `is_passed` = '2'  AND `status` = '1'  AND `type` = '2' ORDER BY `weigh` ASC LIMIT 6 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `isnew_switch` = 1 LIMIT 10 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_question` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_question` LIMIT 10 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `IsHot_switch` = 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:52:50+08:00 ] 172.18.138.217 36.1.107.151 GET /index/ajax/lang?callback=define&controllername=index&v=1507906369
+[ info ] www.haofangzhiye.com/index/ajax/lang?callback=define&controllername=index&v=1507906369 [运行时间：0.001960s][吞吐率：510.19req/s] [内存消耗：353.62kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000219s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1507906369',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000046s ]
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/index/controller/Ajax.php ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:52:51+08:00 ] 172.18.138.217 36.1.107.151 GET /index/index/index?houseType=1&sort=id&order=desc&_=1507906370626
+[ info ] www.haofangzhiye.com/index/index/index?houseType=1&sort=id&order=desc&_=1507906370626 [运行时间：0.005318s][吞吐率：188.04req/s] [内存消耗：741.88kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000215s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/index/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'houseType' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  '_' => '1507906370626',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000045s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` WHERE  `HouseType` = '1' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `HouseType` = '1' ORDER BY `id`  desc [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:52:51+08:00 ] 172.18.138.217 36.1.107.151 GET /index/index/index?houseType=0&sort=id&order=desc&_=1507906370627
+[ info ] www.haofangzhiye.com/index/index/index?houseType=0&sort=id&order=desc&_=1507906370627 [运行时间：0.005234s][吞吐率：191.06req/s] [内存消耗：741.88kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000138s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/index/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'houseType' => '0',
+  'sort' => 'id',
+  'order' => 'desc',
+  '_' => '1507906370627',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000037s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000247s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.001148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` WHERE  `HouseType` = '0' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `HouseType` = '0' ORDER BY `id`  desc [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:01+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/housemanage/house?addtabs=1
+[ info ] www.haofangzhiye.com/admin/housemanage/house?addtabs=1 [运行时间：0.007137s][吞吐率：140.11req/s] [内存消耗：639.59kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000255s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'housemanage.house',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000058s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/house.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /usr/share/nginx/haofangzhiye/application/admin/library/traits/Backend.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/admin/view/housemanage/house/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'housesoucetypeList',
+  6 => 'housetypeList',
+  7 => 'chaoxiangList',
+  8 => 'zhuzhaileixingList',
+  9 => 'zhuangxiuleixingList',
+  10 => 'chanquannianxianList',
+  11 => 'chanquanList',
+  12 => 'showstatusList',
+  13 => 'statusList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000028s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001224s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = '/admin/housemanage/house' LIMIT 1 [ RunTime:0.000193s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:02+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/ajax/lang?callback=define&controllername=housemanage.house&v=1507906381
+[ info ] www.haofangzhiye.com/admin/ajax/lang?callback=define&controllername=housemanage.house&v=1507906381 [运行时间：0.002353s][吞吐率：424.95req/s] [内存消耗：395.86kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000230s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'housemanage.house',
+  'v' => '1507906381',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000048s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000018s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:53:02+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1507906382194
+[ info ] www.haofangzhiye.com/admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1507906382194 [运行时间：0.008972s][吞吐率：111.46req/s] [内存消耗：865.01kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000221s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'housemanage.house',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1507906382194',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000056s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/house.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /usr/share/nginx/haofangzhiye/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000032s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000376s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001226s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` ORDER BY `weigh`  desc LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` ORDER BY `weigh`  desc LIMIT 0,10 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:13+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22BiaoTi%22%3A%22%E6%81%92%E5%A4%A7%22%7D&op=%7B%22BiaoTi%22%3A%22LIKE+%25...%25%22%7D&_=1507906382195
+[ info ] www.haofangzhiye.com/admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22BiaoTi%22%3A%22%E6%81%92%E5%A4%A7%22%7D&op=%7B%22BiaoTi%22%3A%22LIKE+%25...%25%22%7D&_=1507906382195 [运行时间：0.007670s][吞吐率：130.38req/s] [内存消耗：873.17kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000240s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'housemanage.house',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"BiaoTi":"恒大"}',
+  'op' => '{"BiaoTi":"LIKE %...%"}',
+  '_' => '1507906382195',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000057s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/house.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /usr/share/nginx/haofangzhiye/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` WHERE  (  `BiaoTi` LIKE '%恒大%' ) ORDER BY `weigh`  desc LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  (  `BiaoTi` LIKE '%恒大%' ) ORDER BY `weigh`  desc LIMIT 0,10 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:18+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/housemanage/house/edit/ids/3?dialog=1
+[ info ] www.haofangzhiye.com/admin/housemanage/house/edit/ids/3?dialog=1 [运行时间：0.009082s][吞吐率：110.11req/s] [内存消耗：873.21kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000247s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'housemanage.house',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house?addtabs=1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'ids' => '3',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000058s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/house.php
+[ info ] [ RUN ] app\common\controller\Backend->edit[ /usr/share/nginx/haofangzhiye/application/admin/library/traits/Backend.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/admin/view/housemanage/house/edit.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'housesoucetypeList',
+  6 => 'housetypeList',
+  7 => 'chaoxiangList',
+  8 => 'zhuzhaileixingList',
+  9 => 'zhuangxiuleixingList',
+  10 => 'chanquannianxianList',
+  11 => 'chanquanList',
+  12 => 'showstatusList',
+  13 => 'statusList',
+  14 => 'row',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000027s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `Id` = 3 LIMIT 1 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:19+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/ajax/lang?callback=define&controllername=housemanage.house&v=1507906398
+[ info ] www.haofangzhiye.com/admin/ajax/lang?callback=define&controllername=housemanage.house&v=1507906398 [运行时间：0.002284s][吞吐率：437.86req/s] [内存消耗：395.86kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000212s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house/edit/ids/3?dialog=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'housemanage.house',
+  'v' => '1507906398',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000046s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000031s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:53:28+08:00 ] 172.18.138.217 36.1.107.151 POST /admin/housemanage/house/edit/ids/3?dialog=1
+[ info ] www.haofangzhiye.com/admin/housemanage/house/edit/ids/3?dialog=1 [运行时间：0.013926s][吞吐率：71.81req/s] [内存消耗：690.57kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000250s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'housemanage.house',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house/edit/ids/3?dialog=1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.haofangzhiye.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '1043',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'row' => 
+  array (
+    'HouseName' => '恒大美丽沙',
+    'BiaoTi' => '恒大美丽沙',
+    'HouseSouceType' => '1',
+    'HouseType' => '0',
+    'Adress_city' => '海南省/海口市/美兰区',
+    'Adress' => '',
+    'HuXing_Shi' => '1',
+    'HuXing_Ting' => '0',
+    'HuXing_Wei' => '1',
+    'JianZhuMianJi' => '0',
+    'MianJi' => '0',
+    'LouCeng' => '1',
+    'CengGao' => '1',
+    'ChaoXiang' => 'NB',
+    'DanJia' => '0',
+    'FangJia' => '0',
+    'BiaoQian' => '',
+    'ZhuZhaiLeiXing' => 'PTZZ',
+    'ZhuangXiuLeiXing' => 'MP',
+    'ChanQuanNianXian' => 'Y70',
+    'ChanQuan' => 'SPF',
+    'JianZhuNianDai' => '2001',
+    'content' => '<p>测试</p>',
+    'Images' => '/uploads/20170829/ab2ecec3b3143a2f3b59d0f2a87fdac8.jpg',
+    'LianXiRen' => '',
+    'LianXiDianHua' => '',
+    'ShenFenZheng' => '',
+    'ShowStatus' => '0',
+    'Status' => '0',
+    'CreateByUserId' => '1',
+    'CreateByUser' => 'Admin',
+    'IsHot_switch' => '0',
+    'IsNew_switch' => '0',
+    'IsZT_switch' => '0',
+    'weigh' => '1',
+  ),
+  'ids' => '3',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000066s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/house.php
+[ info ] [ RUN ] app\common\controller\Backend->edit[ /usr/share/nginx/haofangzhiye/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.002933s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001179s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `Id` = 3 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] UPDATE `fa_house`  SET `IsZT_switch`=0,`updatetime`=1507906408  WHERE  `Id` = 3 [ RunTime:0.002638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('房源管理 房源信息管理 编辑' , '{\"dialog\":\"1\",\"row\":{\"HouseName\":\"\\u6052\\u5927\\u7f8e\\u4e3d\\u6c99\",\"BiaoTi\":\"\\u6052\\u5927\\u7f8e\\u4e3d\\u6c99\",\"HouseSouceType\":\"1\",\"HouseType\":\"0\",\"Adress_city\":\"\\u6d77\\u5357\\u7701\\/\\u6d77\\u53e3\\u5e02\\/\\u7f8e\\u5170\\u533a\",\"Adress\":\"\",\"HuXing_Shi\":\"1\",\"HuXing_Ting\":\"0\",\"HuXing_Wei\":\"1\",\"JianZhuMianJi\":\"0\",\"MianJi\":\"0\",\"LouCeng\":\"1\",\"CengGao\":\"1\",\"ChaoXiang\":\"NB\",\"DanJia\":\"0\",\"FangJia\":\"0\",\"BiaoQian\":\"\",\"ZhuZhaiLeiXing\":\"PTZZ\",\"ZhuangXiuLeiXing\":\"MP\",\"ChanQuanNianXian\":\"Y70\",\"ChanQuan\":\"SPF\",\"JianZhuNianDai\":\"2001\",\"content\":\"<p>\\u6d4b\\u8bd5<\\/p>\",\"Images\":\"\\/uploads\\/20170829\\/ab2ecec3b3143a2f3b59d0f2a87fdac8.jpg\",\"LianXiRen\":\"\",\"LianXiDianHua\":\"\",\"ShenFenZheng\":\"\",\"ShowStatus\":\"0\",\"Status\":\"0\",\"CreateByUserId\":\"1\",\"CreateByUser\":\"Admin\",\"IsHot_switch\":\"0\",\"IsNew_switch\":\"0\",\"IsZT_switch\":\"0\",\"weigh\":\"1\"},\"ids\":\"3\"}' , '/admin/housemanage/house/edit/ids/3?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36' , '36.1.107.151' , 1507906408) [ RunTime:0.002062s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:28+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22BiaoTi%22%3A%22%E6%81%92%E5%A4%A7%22%7D&op=%7B%22BiaoTi%22%3A%22LIKE+%25...%25%22%7D&_=1507906382196
+[ info ] www.haofangzhiye.com/admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22BiaoTi%22%3A%22%E6%81%92%E5%A4%A7%22%7D&op=%7B%22BiaoTi%22%3A%22LIKE+%25...%25%22%7D&_=1507906382196 [运行时间：0.007672s][吞吐率：130.34req/s] [内存消耗：873.17kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000210s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'housemanage.house',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"BiaoTi":"恒大"}',
+  'op' => '{"BiaoTi":"LIKE %...%"}',
+  '_' => '1507906382196',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000050s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/house.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /usr/share/nginx/haofangzhiye/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000021s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000348s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001083s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` WHERE  (  `BiaoTi` LIKE '%恒大%' ) ORDER BY `weigh`  desc LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  (  `BiaoTi` LIKE '%恒大%' ) ORDER BY `weigh`  desc LIMIT 0,10 [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:31+08:00 ] 172.18.138.217 36.1.107.151 GET /index/index/index.html
+[ info ] www.haofangzhiye.com/index/index/index.html [运行时间：0.009779s][吞吐率：102.26req/s] [内存消耗：797.80kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000243s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/index/index.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'HotHouse',
+  3 => 'questions',
+  4 => 'slider',
+  5 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_slider` [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_slider` WHERE  `is_delete_switch` = 1  AND `is_passed` = '2'  AND `status` = '1'  AND `type` = '2' ORDER BY `weigh` ASC LIMIT 6 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `isnew_switch` = 1 LIMIT 10 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_question` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_question` LIMIT 10 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `IsHot_switch` = 1 [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:32+08:00 ] 172.18.138.217 36.1.107.151 GET /index/ajax/lang?callback=define&controllername=index&v=1507906411
+[ info ] www.haofangzhiye.com/index/ajax/lang?callback=define&controllername=index&v=1507906411 [运行时间：0.002009s][吞吐率：497.72req/s] [内存消耗：353.62kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000213s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1507906411',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000047s ]
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/index/controller/Ajax.php ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:53:32+08:00 ] 172.18.138.217 36.1.107.151 GET /index/index/index?houseType=1&sort=id&order=desc&_=1507906412372
+[ info ] www.haofangzhiye.com/index/index/index?houseType=1&sort=id&order=desc&_=1507906412372 [运行时间：0.005312s][吞吐率：188.25req/s] [内存消耗：741.88kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000247s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/index/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'houseType' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  '_' => '1507906412372',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000047s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` WHERE  `HouseType` = '1' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `HouseType` = '1' ORDER BY `id`  desc [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:32+08:00 ] 172.18.138.217 36.1.107.151 GET /index/index/index?houseType=0&sort=id&order=desc&_=1507906412373
+[ info ] www.haofangzhiye.com/index/index/index?houseType=0&sort=id&order=desc&_=1507906412373 [运行时间：0.005394s][吞吐率：185.39req/s] [内存消耗：741.88kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000175s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/index/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'houseType' => '0',
+  'sort' => 'id',
+  'order' => 'desc',
+  '_' => '1507906412373',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` WHERE  `HouseType` = '0' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `HouseType` = '0' ORDER BY `id`  desc [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:53:49+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22BiaoTi%22%3A%22%E4%BE%A8%E8%BE%BE%22%7D&op=%7B%22BiaoTi%22%3A%22LIKE+%25...%25%22%7D&_=1507906382197
+[ info ] www.haofangzhiye.com/admin/housemanage/house/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22BiaoTi%22%3A%22%E4%BE%A8%E8%BE%BE%22%7D&op=%7B%22BiaoTi%22%3A%22LIKE+%25...%25%22%7D&_=1507906382197 [运行时间：0.008677s][吞吐率：115.25req/s] [内存消耗：873.17kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000264s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'housemanage.house',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/housemanage/house?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"BiaoTi":"侨达"}',
+  'op' => '{"BiaoTi":"LIKE %...%"}',
+  '_' => '1507906382197',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000070s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/housemanage/house.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/house.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /usr/share/nginx/haofangzhiye/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000029s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_house` WHERE  (  `BiaoTi` LIKE '%侨达%' ) ORDER BY `weigh`  desc LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  (  `BiaoTi` LIKE '%侨达%' ) ORDER BY `weigh`  desc LIMIT 0,10 [ RunTime:0.000320s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:00+08:00 ] 172.18.138.217 36.1.107.151 GET /index/retalhouse/search.html
+[ info ] www.haofangzhiye.com/index/retalhouse/search.html [运行时间：0.006430s][吞吐率：155.52req/s] [内存消耗：707.30kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000271s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'retalhouse',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000052s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ RUN ] app\index\controller\Retalhouse->search[ /usr/share/nginx/haofangzhiye/application/index/controller/Retalhouse.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/retalhouse/search.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'nav',
+  3 => 'houseList',
+  4 => 'model',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `HouseType` = '2'  AND `Status` = '1'  AND `ShowStatus` = '1' [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:01+08:00 ] 172.18.138.217 36.1.107.151 GET /index/ajax/lang?callback=define&controllername=retalhouse&v=1507906500
+[ info ] www.haofangzhiye.com/index/ajax/lang?callback=define&controllername=retalhouse&v=1507906500 [运行时间：0.002004s][吞吐率：499.02req/s] [内存消耗：353.55kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000222s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/retalhouse/search.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'retalhouse',
+  'v' => '1507906500',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000047s ]
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/index/controller/Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:55:03+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/intention/add_house/ids/9?dialog=1
+[ info ] www.haofangzhiye.com/admin/intention/add_house/ids/9?dialog=1 [运行时间：0.005445s][吞吐率：183.65req/s] [内存消耗：749.07kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000240s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'intention',
+    2 => 'add_house',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/retalhouse/search.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'ids' => '9',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000049s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/intention.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Intention->add_house[ /usr/share/nginx/haofangzhiye/application/admin/controller/Intention.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/admin/view/intention/add_house.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'housetypeList',
+  6 => 'yusuzongjiaList',
+  7 => 'statusList',
+  8 => 'houseType',
+  9 => 'row',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `Id` = 9 LIMIT 1 [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:04+08:00 ] 172.18.138.217 36.1.107.151 GET /admin/ajax/lang?callback=define&controllername=intention&v=1507906503
+[ info ] www.haofangzhiye.com/admin/ajax/lang?callback=define&controllername=intention&v=1507906503 [运行时间：0.002269s][吞吐率：440.72req/s] [内存消耗：393.98kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000207s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/admin/intention/add_house/ids/9?dialog=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'intention',
+  'v' => '1507906503',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000064s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/admin/lang/zh-cn/intention.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000019s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:55:07+08:00 ] 172.18.138.217 36.1.107.151 GET /index/retalhouse/detail/id/9
+[ info ] www.haofangzhiye.com/index/retalhouse/detail/id/9 [运行时间：0.007053s][吞吐率：141.79req/s] [内存消耗：756.77kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000265s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'retalhouse',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/retalhouse/search.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000057s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ RUN ] app\index\controller\Retalhouse->detail[ /usr/share/nginx/haofangzhiye/application/index/controller/Retalhouse.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/retalhouse/detail.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'nav',
+  3 => 'images',
+  4 => 'row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `Id` = 9 LIMIT 1 [ RunTime:0.000348s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:07+08:00 ] 172.18.138.217 36.1.107.151 GET /index/ajax/lang?callback=define&controllername=retalhouse&v=1507906507
+[ info ] www.haofangzhiye.com/index/ajax/lang?callback=define&controllername=retalhouse&v=1507906507 [运行时间：0.002009s][吞吐率：497.78req/s] [内存消耗：353.55kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000208s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/retalhouse/detail/id/9',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'retalhouse',
+  'v' => '1507906507',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000067s ]
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/index/controller/Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:55:12+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/index.html
+[ info ] www.haofangzhiye.com/index/news/index.html [运行时间：0.006265s][吞吐率：159.61req/s] [内存消耗：700.95kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000283s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/retalhouse/detail/id/9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000060s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->index[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/news/index.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'nav',
+  3 => 'slider',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_slider` [ RunTime:0.001332s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_slider` WHERE  `is_delete_switch` = 1  AND `is_passed` = '2'  AND `status` = '1'  AND `type` = '5' ORDER BY `weigh` ASC LIMIT 6 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:12+08:00 ] 172.18.138.217 36.1.107.151 GET /index/ajax/lang?callback=define&controllername=news&v=1507906512
+[ info ] www.haofangzhiye.com/index/ajax/lang?callback=define&controllername=news&v=1507906512 [运行时间：0.002023s][吞吐率：494.32req/s] [内存消耗：353.51kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000216s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'news',
+  'v' => '1507906512',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000048s ]
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/index/controller/Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:55:12+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/index?newsType=2&sort=id&order=desc&offset=0&limit=12&_=1507906512660
+[ info ] www.haofangzhiye.com/index/news/index?newsType=2&sort=id&order=desc&offset=0&limit=12&_=1507906512660 [运行时间：0.005297s][吞吐率：188.79req/s] [内存消耗：696.98kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000254s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'newsType' => '2',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '12',
+  '_' => '1507906512660',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000065s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->index[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_news` WHERE  `newstype` = '2' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `newstype` = '2' ORDER BY `id`  desc LIMIT 0,12 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:12+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/index?newsType=1&sort=id&order=desc&offset=0&limit=12&_=1507906512661
+[ info ] www.haofangzhiye.com/index/news/index?newsType=1&sort=id&order=desc&offset=0&limit=12&_=1507906512661 [运行时间：0.004764s][吞吐率：209.91req/s] [内存消耗：696.98kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000167s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'newsType' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '12',
+  '_' => '1507906512661',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000046s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->index[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000303s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_news` WHERE  `newstype` = '1' ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `newstype` = '1' ORDER BY `id`  desc LIMIT 0,12 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:13+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/getQuestion?sort=id&order=desc&offset=0&limit=12&_=1507906512662
+[ info ] www.haofangzhiye.com/index/news/getQuestion?sort=id&order=desc&offset=0&limit=12&_=1507906512662 [运行时间：0.003911s][吞吐率：255.69req/s] [内存消耗：692.00kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000167s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'getQuestion',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '12',
+  '_' => '1507906512662',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000040s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->getQuestion[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_question` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_question` ORDER BY `id`  desc LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_question` ORDER BY `id`  desc LIMIT 0,12 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:14+08:00 ] 172.18.138.217 36.1.107.151 GET /index/news/detail/id/2
+[ info ] www.haofangzhiye.com/index/news/detail/id/2 [运行时间：0.005715s][吞吐率：174.97req/s] [内存消耗：748.55kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000215s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000047s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\News->detail[ /usr/share/nginx/haofangzhiye/application/index/controller/News.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/news/detail.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'nav',
+  3 => 'row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `Id` = 2 LIMIT 1 [ RunTime:0.000290s ]
+---------------------------------------------------------------
+[ 2017-10-13T22:55:14+08:00 ] 172.18.138.217 36.1.107.151 GET /index/ajax/lang?callback=define&controllername=news&v=1507906514
+[ info ] www.haofangzhiye.com/index/ajax/lang?callback=define&controllername=news&v=1507906514 [运行时间：0.001984s][吞吐率：504.06req/s] [内存消耗：353.51kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000231s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=hodadunh3i62cmi856m08jrvl2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.haofangzhiye.com/index/news/detail/id/2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'news',
+  'v' => '1507906514',
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000060s ]
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /usr/share/nginx/haofangzhiye/application/index/controller/Ajax.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:57:34+08:00 ] 172.18.138.217 177.142.96.33 GET /cgi/common.cgi
+[ info ] 120.77.32.145/cgi/common.cgi [运行时间：0.002058s][吞吐率：485.90req/s] [内存消耗：233.20kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000265s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cgi',
+    1 => 'common.cgi',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget(linux)',
+  'host' => '120.77.32.145',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:57:38+08:00 ] 172.18.138.217 177.142.96.33 GET /stssys.htm
+[ info ] 120.77.32.145/stssys.htm [运行时间：0.002216s][吞吐率：451.24req/s] [内存消耗：233.13kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000275s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'stssys.htm',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget(linux)',
+  'host' => '120.77.32.145',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-13T22:57:42+08:00 ] 172.18.138.217 177.142.96.33 GET /
+[ info ] 120.77.32.145/ [运行时间：0.008466s][吞吐率：118.12req/s] [内存消耗：795.84kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000270s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget(linux)',
+  'host' => '120.77.32.145',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000065s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/index/index.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'HotHouse',
+  3 => 'questions',
+  4 => 'slider',
+  5 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_slider` [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_slider` WHERE  `is_delete_switch` = 1  AND `is_passed` = '2'  AND `status` = '1'  AND `type` = '2' ORDER BY `weigh` ASC LIMIT 6 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `isnew_switch` = 1 LIMIT 10 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_question` [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_question` LIMIT 10 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `IsHot_switch` = 1 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2017-10-13T23:31:07+08:00 ] 172.18.138.217 106.2.124.185 GET /
+[ info ] baidu.com/ [运行时间：0.009889s][吞吐率：101.12req/s] [内存消耗：796.06kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000263s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'proxy-connection' => 'Keep-Alive',
+  'host' => 'baidu.com',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/index/index.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'HotHouse',
+  3 => 'questions',
+  4 => 'slider',
+  5 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000376s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_slider` [ RunTime:0.001230s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_slider` WHERE  `is_delete_switch` = 1  AND `is_passed` = '2'  AND `status` = '1'  AND `type` = '2' ORDER BY `weigh` ASC LIMIT 6 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `isnew_switch` = 1 LIMIT 10 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_question` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_question` LIMIT 10 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `IsHot_switch` = 1 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2017-10-13T23:37:29+08:00 ] 172.18.138.217 202.108.211.56 GET /
+[ info ] www.haofangzhiye.com/ [运行时间：0.010085s][吞吐率：99.16req/s] [内存消耗：797.44kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000296s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.haofangzhiye.com',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000064s ]
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LANG ] /usr/share/nginx/haofangzhiye/public/../application/index/lang/zh-cn/house.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /usr/share/nginx/haofangzhiye/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /usr/share/nginx/haofangzhiye/public/../application/index/view/index/index.html [ array (
+  0 => 'site',
+  1 => 'config',
+  2 => 'HotHouse',
+  3 => 'questions',
+  4 => 'slider',
+  5 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:dbname=haofangzhiye;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_slider` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_slider` WHERE  `is_delete_switch` = 1  AND `is_passed` = '2'  AND `status` = '1'  AND `type` = '2' ORDER BY `weigh` ASC LIMIT 6 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_news` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_news` WHERE  `isnew_switch` = 1 LIMIT 10 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_question` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_question` LIMIT 10 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_house` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_house` WHERE  `IsHot_switch` = 1 [ RunTime:0.000336s ]

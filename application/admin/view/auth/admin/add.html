@@ -1,0 +1,90 @@
+<form id="add-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" action="">
+    <div class="form-group">
+        <label for="role_id" class="control-label col-xs-12 col-sm-2">{:__('Group')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_select('group[]', $groupdata, null, ['class'=>'form-control selectpicker', 'multiple'=>'', 'required'=>''])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="username" class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="username" name="row[username]" value="" data-rule="required;username" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="nickname" class="control-label col-xs-12 col-sm-2">{:__('Nickname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="nickname" name="row[nickname]" value="" data-rule="required" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password" class="control-label col-xs-12 col-sm-2">{:__('Password')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="password" class="form-control" id="password" name="row[password]" value="" data-rule="required;password" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-usertype" class="control-label col-xs-12 col-sm-2">{:__('usertype')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-usertype" data-rule="required" class="form-control selectpicker" name="row[usertype]">
+                {foreach name="usertypeList" item="vo"}
+                {if($key>$admin.usertype)}
+                <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/if}
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-email" class="control-label col-xs-12 col-sm-2">{:__('email')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-email" class="form-control" name="row[email]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-qq" class="control-label col-xs-12 col-sm-2">{:__('qq')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-qq" class="form-control" name="row[qq]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-mobile" class="control-label col-xs-12 col-sm-2">{:__('mobile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mobile" class="form-control" name="row[mobile]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-wechat" class="control-label col-xs-12 col-sm-2">{:__('wechat')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-wechat" class="form-control" name="row[wechat]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-servicecontent" class="control-label col-xs-12 col-sm-2">{:__('servicecontent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-servicecontent" class="form-control summernote" rows="5" name="row[servicecontent]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-GoldConsultant_switch" class="control-label col-xs-12 col-sm-2">{:__('GoldConsultant_switch')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input checked="" id="c-GoldConsultant_switch" name="row[GoldConsultant_switch]" type="hidden" value="0"><label for="row[GoldConsultant_switch]-switch"><input id="row[GoldConsultant_switch]-switch" name="row[GoldConsultant_switch]" type="checkbox" value="0"></label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['normal'=>__('Normal'), 'hidden'=>__('Hidden')])}
+        </div>
+    </div>
+    <div class="form-group hidden layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

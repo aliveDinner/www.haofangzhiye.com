@@ -1,0 +1,110 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-house_city" class="control-label col-xs-12 col-sm-2">{:__('House_city')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-house_city" class="form-control" data-toggle="city-picker" name="row[house_city]" type="text"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-house_area" class="control-label col-xs-12 col-sm-2">{:__('House_area')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-house_area" class="form-control" name="row[house_area]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-house_id" class="control-label col-xs-12 col-sm-2">{:__('House_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-house_id"  data-source="house/index" data-field="HouseName" class="form-control selectpage" name="row[house_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-housetype" class="control-label col-xs-12 col-sm-2">{:__('Housetype')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-housetype" data-rule="required" class="form-control selectpicker" name="row[housetype]">
+                {foreach name="housetypeList" item="vo"}
+                    <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-housename" class="control-label col-xs-12 col-sm-2">{:__('Housename')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-housename" class="form-control" name="row[housename]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-yusuzongjia" class="control-label col-xs-12 col-sm-2">{:__('Yusuzongjia')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-yusuzongjia" class="form-control selectpicker" name="row[yusuzongjia]">
+                {foreach name="yusuzongjiaList" item="vo"}
+                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-intentcontent" class="control-label col-xs-12 col-sm-2">{:__('Intentcontent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-intentcontent" class="form-control summernote" rows="5" name="row[intentcontent]" cols="50"></textarea>
+        </div>
+    </div>
+    <!--<div class="form-group">-->
+        <!--<label for="c-user_id" class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>-->
+        <!--<div class="col-xs-12 col-sm-8">-->
+            <!--<input id="c-user_id"  data-source="user/index" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="">-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="form-group">
+        <label for="c-username" class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-username" data-rule="required" class="form-control" name="row[username]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-userphone" class="control-label col-xs-12 col-sm-2">{:__('Userphone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-userphone" data-rule="required" class="form-control" name="row[userphone]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-admin_id" class="control-label col-xs-12 col-sm-2">{:__('Admin_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-admin_id"  data-source="auth/admin/index" data-field="nickname" class="form-control selectpage" name="row[admin_id]" type="text" value="{$admin.id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-adminname" class="control-label col-xs-12 col-sm-2">{:__('Adminname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-adminname" class="form-control" name="row[adminname]" type="text" value="{$admin.nickname}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-status" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="status 0"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-remark" class="control-label col-xs-12 col-sm-2">{:__('Remark')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-remark" class="form-control " rows="5" name="row[remark]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

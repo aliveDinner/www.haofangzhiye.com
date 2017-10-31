@@ -1,0 +1,262 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-HouseName" class="control-label col-xs-12 col-sm-2">{:__('HouseName')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-HouseName" data-rule="required" class="form-control" name="row[HouseName]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-BiaoTi" class="control-label col-xs-12 col-sm-2">{:__('BiaoTi')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-BiaoTi" class="form-control" name="row[BiaoTi]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-HouseSouceType" class="control-label col-xs-12 col-sm-2">{:__('HouseSouceType')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-HouseSouceType" data-rule="required" class="form-control selectpicker" name="row[HouseSouceType]">
+                {foreach name="housesoucetypeList" item="vo"}
+                <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-HouseType" class="control-label col-xs-12 col-sm-2">{:__('HouseType')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-HouseType" data-rule="required" class="form-control selectpicker" name="row[HouseType]">
+                {foreach name="housetypeList" item="vo"}
+                <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Adress_city" class="control-label col-xs-12 col-sm-2">{:__('Adress_city')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-Adress_city" class="form-control" data-toggle="city-picker" name="row[Adress_city]" type="text"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Adress" class="control-label col-xs-12 col-sm-2">{:__('Adress')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Adress" class="form-control" name="row[Adress]" type="text">
+        </div>
+    </div>
+
+    <div class="form-group" >
+        <label for="c-HuXing_Shi" class="control-label col-xs-12 col-sm-2">户型:</label>
+        <div class="col-xs-12 col-sm-8" style="display: flex;">
+            <div class="input-group" style="width: 100px">
+                <input id="c-HuXing_Shi" data-rule="required" class="form-control" aria-describedby="basic-addon1" name="row[HuXing_Shi]" type="number" value="1">
+                <span class="input-group-addon" id="basic-addon1">{:__('HuXing_Shi')}</span>
+            </div>
+            <div class="input-group" style="width: 100px">
+                <input id="c-HuXing_Ting" data-rule="required" class="form-control" aria-describedby="basic-addon2" name="row[HuXing_Ting]" type="number" value="0">
+                <span class="input-group-addon" id="basic-addon2">{:__('HuXing_Ting')}</span>
+            </div>
+            <div class="input-group" style="width: 100px">
+                <input id="c-HuXing_Wei" data-rule="required" class="form-control" aria-describedby="basic-addon3" name="row[HuXing_Wei]" type="number" value="1">
+                <span class="input-group-addon" id="basic-addon3">{:__('HuXing_Wei')}</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="c-JianZhuMianJi" class="control-label col-xs-12 col-sm-2">{:__('JianZhuMianJi')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group" >
+                <input id="c-JianZhuMianJi" data-rule="required" class="form-control" aria-describedby="mj-addon1" name="row[JianZhuMianJi]" type="number" value="0">
+                <span class="input-group-addon" id="mj-addon1">㎡</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-MianJi" class="control-label col-xs-12 col-sm-2">{:__('MianJi')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group" >
+                <input id="c-MianJi" data-rule="required" class="form-control" aria-describedby="snmj-addon1" name="row[MianJi]" type="number" value="0">
+                <span class="input-group-addon" id="snmj-addon1">㎡</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" >
+        <label for="c-HuXing_Shi" class="control-label col-xs-12 col-sm-2">楼层:</label>
+        <div class="col-xs-12 col-sm-8" style="display: flex;">
+            <div class="input-group" style="width: 100px">
+                <input id="c-LouCeng" data-rule="required" class="form-control" aria-describedby="lc-addon1" name="row[LouCeng]" type="number" value="1">
+                <span class="input-group-addon" id="lc-addon1">{:__('LouCeng')}</span>
+            </div>
+            <div class="input-group" style="width: 100px">
+                <input id="c-CengGao" data-rule="required" class="form-control" aria-describedby="lc-addon2" name="row[CengGao]" type="number" value="1">
+                <span class="input-group-addon" id="lc-addon2">{:__('CengGao')}</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-ChaoXiang" class="control-label col-xs-12 col-sm-2">{:__('ChaoXiang')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-ChaoXiang" class="form-control selectpicker" name="row[ChaoXiang]">
+                {foreach name="chaoxiangList" item="vo"}
+                <option value="{$key}" {in name="key" value="NB"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-DanJia" class="control-label col-xs-12 col-sm-2">{:__('DanJia')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group" >
+                <input id="c-DanJia" data-rule="required" class="form-control" aria-describedby="dj-addon1" name="row[DanJia]" type="number" value="0">
+                <span class="input-group-addon" id="dj-addon1">元</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-FangJia" class="control-label col-xs-12 col-sm-2">{:__('FangJia')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group" >
+                <input id="c-FangJia" data-rule="required" class="form-control" aria-describedby="fj-addon1" name="row[FangJia]" type="number" value="0">
+                <span class="input-group-addon" id="fj-addon1">万元</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-BiaoQian" class="control-label col-xs-12 col-sm-2">{:__('BiaoQian')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-BiaoQian" class="form-control" name="row[BiaoQian]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-ZhuZhaiLeiXing" class="control-label col-xs-12 col-sm-2">{:__('ZhuZhaiLeiXing')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-ZhuZhaiLeiXing" class="form-control selectpicker" name="row[ZhuZhaiLeiXing]">
+                {foreach name="zhuzhaileixingList" item="vo"}
+                <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-ZhuangXiuLeiXing" class="control-label col-xs-12 col-sm-2">{:__('ZhuangXiuLeiXing')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-ZhuangXiuLeiXing" class="form-control selectpicker" name="row[ZhuangXiuLeiXing]">
+                {foreach name="zhuangxiuleixingList" item="vo"}
+                <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-ChanQuanNianXian" class="control-label col-xs-12 col-sm-2">{:__('ChanQuanNianXian')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-ChanQuanNianXian" class="form-control selectpicker" name="row[ChanQuanNianXian]">
+                {foreach name="chanquannianxianList" item="vo"}
+                <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-ChanQuan" class="control-label col-xs-12 col-sm-2">{:__('ChanQuan')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-ChanQuan" class="form-control selectpicker" name="row[ChanQuan]">
+                {foreach name="chanquanList" item="vo"}
+                <option value="{$key}" {in name="key" value="SPF"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-JianZhuNianDai" class="control-label col-xs-12 col-sm-2">{:__('JianZhuNianDai')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group" >
+                <input id="c-JianZhuNianDai" data-rule="required" class="form-control" aria-describedby="nd-addon1" name="row[JianZhuNianDai]" type="number" value="0">
+                <span class="input-group-addon" id="nd-addon1">年</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-content" class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" class="form-control summernote" rows="5" name="row[content]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Images" class="control-label col-xs-12 col-sm-2">{:__('Images')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="form-inline">
+                <input id="c-Images" class="form-control" size="50" name="row[Images]" type="text">
+                <span><button type="button" id="plupload-Images" class="btn btn-danger plupload" data-input-id="c-Images" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-Images"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                <span><button type="button" id="fachoose-Images" class="btn btn-primary fachoose" data-input-id="c-Images" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                <ul class="row list-inline plupload-preview" id="p-Images"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-LianXiRen" class="control-label col-xs-12 col-sm-2">{:__('LianXiRen')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-LianXiRen" class="form-control" name="row[LianXiRen]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-LianXiDianHua" class="control-label col-xs-12 col-sm-2">{:__('LianXiDianHua')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-LianXiDianHua" class="form-control" name="row[LianXiDianHua]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-ShenFenZheng" class="control-label col-xs-12 col-sm-2">{:__('ShenFenZheng')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ShenFenZheng" class="form-control" name="row[ShenFenZheng]" type="text">
+        </div>
+    </div>
+    <div class="form-group hidden">
+        <label for="c-ShowStatus" class="control-label col-xs-12 col-sm-2">{:__('ShowStatus')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            {foreach name="showstatusList" item="vo"}
+            <label for="row[ShowStatus]-{$key}"><input id="row[ShowStatus]-{$key}" name="row[ShowStatus]" type="radio" value="{$key}" {in name="key" value="0"}checked{/in} /> {$vo}</label>
+            {/foreach}
+
+        </div>
+    </div>
+    <div class="form-group hidden">
+        <label for="c-Status" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            {foreach name="statusList" item="vo"}
+            <label for="row[Status]-{$key}"><input id="row[Status]-{$key}" name="row[Status]" type="radio" value="{$key}" {in name="key" value="0"}checked{/in} /> {$vo}</label>
+            {/foreach}
+
+        </div>
+    </div>
+
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

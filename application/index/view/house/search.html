@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title> [ Home ] </title>
+    <script type="text/javascript">
+        var selCity = "";
+        $(function () {
+            $(".ciytDiv a").click(function () {
+                $(this).addClass("action").siblings().removeClass("action");
+                if ($(this).attr("ctm-data-idx") == 1)
+                    selCity = "";
+
+                else {
+                    var str = $(this).html();
+                    selCity = str.substr(0, str.length - 1);
+                }
+                $("#selCity").val(selCity);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- This webContainerTop start 上 开始 -->
+<section id="webContainerTop" style="display: none;">
+
+    <!-- This absTopForms start -->
+    <article id="absTopTable">
+
+    </article>
+    <!-- This absTopForms end -->
+
+    <!-- This fullTopForms start -->
+    <article id="fullTopTable">
+
+    </article>
+    <!-- This fullTopForms end -->
+
+</section>
+<!-- This webContainerTop end 上 结束 -->
+
+<!-- This webContainerMiddle start 中 开始 -->
+<section id="webContainerMiddle" class="webContainerMiddle">
+
+    <!-- This webBannerTable start -->
+    <article id="webBannerTable" class="webBannerTable flex">
+
+        <!-- This bannerAbsTable start -->
+        <section id="bannerAbsTable" class="absTopTable">
+
+        </section>
+        <!-- This bannerAbsTable end -->
+
+        <section id="banner-body" class="flex" style="display: block;">
+
+            <!-- This bannerTopTable start -->
+            <article id="bannerTopTable" class="topTable" style="display: none;">
+
+                <!-- 左侧 区域开启 -->
+                <section class="leftTable flex-top-left" style="display: none;">
+
+                </section>
+                <!-- 左侧 区域结束 -->
+
+                <!-- 中间 区域开启 -->
+                <section class="centerTable flex-top-center" style="display: none;">
+
+                </section>
+                <!-- 中间 区域结束 -->
+
+                <!-- 右侧 区域开启 -->
+                <section class="rightTable flex-top-right" style="display: none;">
+
+                </section>
+                <!-- 右侧 区域结束 -->
+
+            </article>
+            <!-- This bannerTopTable end -->
+
+            <!-- This bannerMiddleTable start -->
+            <article id="bannerMiddleTable" class="middleTable">
+
+                <!-- 顶级主体 左侧 区域开启 -->
+                <section class="leftTable flex-middle-left" style="display: none;">
+
+                </section>
+                <!-- 顶级主体 左侧 区域结束 -->
+
+                <!-- 顶级主体 中间 区域导航开启 -->
+                <section class="centerTable flex-middle-center">
+
+                </section>
+                <!-- 顶级主体 中间 区域导航结束 -->
+
+                <!-- 顶级主体 右侧 区域导航开启 -->
+                <section class="rightTable flex-middle-right" style="display: none;">
+
+                </section>
+                <!-- 顶级主体右侧区域导航结束 -->
+
+            </article>
+            <!-- This bannerMiddleTable end -->
+
+            <!-- This bannerBottomTable start -->
+            <article id="bannerBottomTable" class="bottomTable">
+
+                <!-- 左侧 区域开启 -->
+                <section class="leftTable flex-bottom-left" style="display: none;">
+
+                </section>
+                <!-- 左侧 区域结束 -->
+
+                <!-- 中间 区域开启 -->
+                <section class="centerTable flex-bottom-center" style="display: none;">
+
+                </section>
+                <!-- 中间 区域结束 -->
+
+                <!-- 右侧 区域开启 -->
+                <section class="rightTable flex-bottom-left" style="display: none;">
+
+                </section>
+                <!-- 右侧 区域结束 -->
+
+            </article>
+            <!-- This bannerBottomTable end -->
+
+        </section>
+
+    </article>
+    <!-- This webBannerTable end -->
+
+    <!-- This webBannerTable start -->
+    <article id="webContentBody" class="webContentBody">
+
+        <section class="alive-layout">
+
+            <article class="alive-header">
+                <form class="layui-form search-box" action="" method="get" id="searchForm">
+                    <div class="search-container">
+                        <div class="search-body">
+                            <div class="layui-form-item" style="padding: 0 35px;">
+                                <input class="layui-input search-input" type="text" name="keyword"
+                                       value="{$Think.get.keyword}" style="width:960px;display: inline-block;"
+                                       placeholder="请输入区域或小区名开始找房">
+                                <button type="submit" class="search-submit layui-btn layui-btn-danger"
+                                        lay-filter="submit">搜索
+                                </button>
+                                <label class="layui-btn layui-btn-primary" lay-filter="reset">重置</label>
+                            </div>
+                        </div>
+                        <div class="layout-colla-content layout-show">
+                            <div class="layui-form-item">
+                                <div class="hidden">
+                                <input type="text" id="selCity" name="selCity" value="" >
+                                </div>
+                                <label class="layui-form-label">县市：</label>
+
+                                <div class="layui-input-block">
+                                    <div class="ciytDiv">
+                                        <a class="action" href="#" ctm-data-idx="1">不限</a>
+                                        <a href="#" ctm-data-idx="2">海口市</a>
+
+                                        <a href="#" ctm-data-idx="3">澄迈县</a>
+
+                                        <a href="#" ctm-data-idx="4">琼海市</a>
+
+                                        <a href="#" ctm-data-idx="5">文昌市</a>
+
+                                        <a href="#" ctm-data-idx="6">临高县</a>
+
+                                        <a href="#" ctm-data-idx="7">儋州市</a>
+
+                                        <a href="#" ctm-data-idx="8">三亚市</a>
+
+                                        <a href="#" ctm-data-idx="9">万宁市</a>
+
+                                        <a href="#" ctm-data-idx="10">定安县</a>
+
+                                        <a href="#" ctm-data-idx="11">五指山市</a>
+
+                                        <a href="#" ctm-data-idx="12">屯昌县</a>
+
+                                        <a href="#" ctm-data-idx="13">东方市</a>
+
+                                        <a href="#" ctm-data-idx="14">陵水县</a>
+
+                                        <a href="#" ctm-data-idx="15">乐东县</a>
+
+                                        <a href="#" ctm-data-idx="16">白沙县</a>
+
+                                        <a href="#" ctm-data-idx="17">昌江县</a>
+
+                                        <a href="#" ctm-data-idx="18">保亭县</a>
+
+                                        <a href="#" ctm-data-idx="19">琼中县</a>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房屋类型：</label>
+                                <div class="layui-input-block">
+                                    {php}$request = request()->request();{/php}
+                                    <input type="radio" name="noHouseType" value="1" title="不限" lay-filter="the-one"
+                                           lay-group="houseType" lay-default {eq name="Think.get.noHouseType" value="1"
+                                           }checked{/eq} >
+                                    {volist name="$model->getZhuzhaileixingList()" id="item" }
+
+                                    <input type="checkbox" name="houseType[]" value="{$key}" lay-filter="the-other"
+                                           lay-group="houseType" lay-skin="primary" title="{$item}" {if
+                                           condition="isset($request['houseType'])" }{in name="key"
+                                           value="$request.houseType" }checked{/in}{/if} >
+                                    {/volist}
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">房源房型：</label>
+                                    <div class="layui-input-inline" style="width: 130px;">
+                                        <select name="room" lay-search>
+                                            <option value="">选择居室</option>
+                                            <option value="">不限</option>
+                                            {volist name="model->getRoomList()" id="item" }
+                                            <option value="{$key}" {if condition="$Think.get.room eq $key" }selected{
+                                            /if} >{$item}</option>
+                                            {/volist}
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline" style="width: 130px;">
+                                        <select name="hall" lay-search>
+                                            <option value="">选择大厅</option>
+                                            <option value="">不限</option>
+                                            {volist name="model->getParlourList()" id="item" }
+                                            <option value="{$key}" {if condition="$Think.get.hall eq $key" }selected{
+                                            /if} >{$item}</option>
+                                            {/volist}
+                                        </select>
+                                    </div>
+
+                                    <div class="layui-input-inline" style="width: 130px;">
+                                        <select name="toilet" lay-search>
+                                            <option value="">选择独卫</option>
+                                            <option value="">不限</option>
+                                            {volist name="model->getToiletList()" id="item" }
+                                            <option value="{$key}" {if condition="$Think.get.toilet eq $key" }selected{
+                                            /if} >{$item}</option>
+                                            {/volist}
+                                        </select>
+                                    </div>
+
+                                    <div class="layui-input-inline" style="width: 130px;">
+                                        <select name="face" lay-search>
+                                            <option value="">选择朝向</option>
+                                            <option value="">不限</option>
+                                            {volist name="model->getChaoxiangList()" id="item" }
+                                            <option value="{$key}" {if condition="$Think.get.face eq $key" }selected{
+                                            /if} >{$item}</option>
+                                            {/volist}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">产权：</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="noHouseLabel" value="1" title="不限" lay-filter="the-one"
+                                           lay-group="houseLabel" lay-default {eq name="Think.get.noHouseLabel"
+                                           value="1" }checked{/eq} >
+                                    {volist name="model->getChanquannianxianList()" id="item" }
+                                    <input type="checkbox" name="houseLabel[]" value="{$key}" lay-filter="the-other"
+                                           lay-group="houseLabel" lay-skin="primary" title="{$item}" {if
+                                           condition="isset($request['houseLabel'])" }{in name="key"
+                                           value="$request.houseLabel" }checked{/in}{/if} >
+                                    {/volist}
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">装修状况：</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="noFitment" value="1" title="不限" lay-filter="the-one"
+                                           lay-group="fitment" lay-default {eq name="Think.get.noFitment" value="1"
+                                           }checked{/eq} >
+                                    {volist name="model->getZhuangxiuleixingList()" id="item" }
+                                    <input type="checkbox" name="fitment[]" value="{$key}" lay-filter="the-other"
+                                           lay-group="fitment" lay-skin="primary" title="{$item}" {if
+                                           condition="isset($request['fitment'])" }{in name="key"
+                                           value="$request.fitment" }checked{/in}{/if}>
+                                    {/volist}
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">价格大小：</label>
+
+                                    <div class="layui-input-inline" style="width: 130px;">
+                                        <select name="price" lay-search>
+                                            <option value="">总价范围</option>
+                                            <option value="">不限</option>
+                                            {volist name="model->getPriceList()" id="item" }
+                                            <option value="{$key}" {if condition="$Think.get.price eq $key" }selected{
+                                            /if} >{$item}</option>
+                                            {/volist}
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline" style="width: 130px;">
+                                        <select name="area" lay-search>
+                                            <option value="">面积范围</option>
+                                            <option value="">不限</option>
+                                            {volist name="model->getMianJiList()" id="item" }
+                                            <option value="{$key}" {if condition="$Think.get.area eq $key" }selected{
+                                            /if} >{$item}</option>
+                                            {/volist}
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline" style="width: 130px;">
+                                        <select name="create" lay-search>
+                                            <option value="">发布时间</option>
+                                            <option value="">不限</option>
+                                            {volist name="model->getCreateTimeList()" id="item" }
+                                            <option value="{$key}" {if condition="$Think.get.create eq $key" }selected{
+                                            /if} >{$item}</option>
+                                            {/volist}
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </article>
+
+            <article class="alive-body">
+                <div class="alive-flex alive-Level" style="width: 100%;min-height:300px;overflow: hidden;">
+                    <div class="alive-layout">
+
+                        <div class="alive-header"></div>
+
+                        <div class="alive-body alive-upLevel">
+
+                            {volist name="houseList" id="model" empty="<p
+                                style='display:inline-block;font-size: 16px;width:100%;color:#ff5722;text-align: center;'>
+                            没有符合你要的房源</p>"}
+                            <div class="alive-layout alive-upLevel">
+
+                                <div class="alive-header" style="height: 25px;"></div>
+
+                                <div class="alive-body alive-upLevel">
+                                    <div class="alive-level"
+                                         style="width:100%;min-height:200px;position: relative;overflow: hidden;">
+
+                                        <div style="width: 240px;">
+                                            <a href="#" class="houseTitle_a" data-id="{$model.Id}"><img class="imgBox"
+                                                                                                        alt="" title=""
+                                                                                                        src="{:explode(',',$model.Images)[0]}"
+                                                                                                        style="border-radius: 2px;"></a>
+                                        </div>
+                                        <div style="flex: 1;">
+                                            <p style="line-height:3em;"><a href="#" class="houseTitle_a"
+                                                                           data-id="{$model.Id}"> <strong><span
+                                                    style="font-family:微软雅黑;color:#FE8300;font-size:20px;">{:empty($model.BiaoTi)?$model.HouseName:$model.BiaoTi}</span></strong></a>
+                                            </p>
+                                            <p style="line-height:3em;"><span
+                                                    style="font-family:微软雅黑;color:#333333;font-size:17px;">{:$model->getZhuangxiuleixingTextAttr($model.ZhuangXiuLeiXing,null)} &nbsp; {$model.HuXing_Shi}室{$model.HuXing_Ting}厅 &nbsp; {$model.JianZhuNianDai}年建造</span>
+                                            </p>
+                                            <p style="line-height:3em;"><span
+                                                    style="font-family:微软雅黑;font-size:18px;color:#333333;"><span
+                                                    style="font-size:14px;color:#666666;">{$model.Adress_city}</span></span>
+                                            </p>
+                                            <p style="line-height:3em;"><span
+                                                    style="font-family:微软雅黑;font-size:18px;color:#333333;"><span
+                                                    style="font-size:14px;color:#666666;"><br></span></span></p>
+                                            <p style="clear:both;"><br></p>
+                                            <p style="clear:both;">
+                                                <a href="#" class="btn btn-danger btn-intention"
+                                                   data-id="{$model.Id}"><i class="fa fa-pencil"></i> 预约看房</a>
+                                            </p>
+                                        </div>
+                                        <div style="width: 240px;">
+                                            <p style="text-align:center;"><span
+                                                    style="font-family:微软雅黑;font-size:22px;color:#333333;"><br></span>
+                                            </p>
+                                            <p style="text-align:center;"><span
+                                                    style="font-family:微软雅黑;font-size:22px;color:#333333;"><br></span>
+                                            </p>
+                                            <p style="text-align:center;"><span
+                                                    style="font-family:微软雅黑;font-size:18px;color:#333333;">{$model.MianJi}平米</span>
+                                            </p>
+                                        </div>
+                                        <div style="width: 200px;">
+                                            <p style="line-height:2em;text-align:center;"><strong><span
+                                                    style="font-family:微软雅黑;color:#FE8300;font-size:26px;"><br></span></strong>
+                                            </p>
+                                            <p style="line-height:2em;text-align:left;"><strong><span
+                                                    style="font-family:微软雅黑;color:#FE8300;font-size:26px;"><br></span></strong>
+                                            </p>
+                                            <p style="line-height:2em;text-align:left;"><strong><span
+                                                    style="font-family:微软雅黑;color:#FE8300;font-size:26px;">{$model.FangJia/10000}万</span></strong>
+                                            </p>
+                                            <p style="line-height:2em;text-align:left;"><span
+                                                    style="font-family:微软雅黑;font-size:18px;color:#333333;"><span
+                                                    style="font-size:13px;color:#666666;">{$model.DanJia}元/平米</span></span>
+                                            </p>
+                                            <p><br></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="alive-footer" style="height: 25px;"></div>
+
+                            </div>
+                            <hr>
+                            {/volist}
+
+                        </div>
+
+                        <div class="alive-footer"></div>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="alive-footer" style="height: 25px;"></article>
+
+        </section>
+
+
+    </article>
+    <!-- This webBannerTable end -->
+
+</section>
+<!-- This webContainerMiddle end 中 结束 -->
+
+<!-- This webContainerBottom start 下 开始 -->
+<section id="webContainerBottom" style="display: none;">
+
+    <!-- This fullBottomForms start -->
+    <article id="fullBottomTable">
+
+    </article>
+    <!-- This fullBottomForms end -->
+
+    <!-- This absBottomForms start -->
+    <article id="absBottomTable">
+
+    </article>
+    <!-- This absBottomForms end -->
+
+</section>
+<!-- This webContainerBottom end 下 结束 -->
+
+<script type="application/javascript">
+    $(function () {
+        Home.init();
+        //Home.render();
+    });
+
+</script>
+
+</body>
+</html>
